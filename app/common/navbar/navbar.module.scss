@@ -1,0 +1,23 @@
+.active {
+    color: dodgerblue !important;
+}
+
+.menu-position {
+    position: absolute;
+    // top: 130%;
+    left: -90%;
+    border: none !important;
+}
+
+.link {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    display: inline-block;
+    background-size: cover;
+}
