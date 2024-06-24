@@ -37,7 +37,7 @@ export async function handleCreate<Model>(
 export async function handleUpdate<Model>(
     model: PrismaDelegate<Model>,
     body: any,
-    id: number
+    id: string
 ) {
     try {
         // Update the entity in the database using the validated data
@@ -57,6 +57,6 @@ export async function getItemById<Model>(
     id: string
 ) {
     return await model.findUnique({
-        where: { id: parseInt(id) },
+        where: { id},
     });
 }
